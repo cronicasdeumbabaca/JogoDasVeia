@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Jogo da Velha</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1>Jogo da Velha</h1>
+
+    <fieldset>
+		<label for="Jogador 1"> Jogador 1: </label>
+		<input type="text" />
+		<label for="Jogador 1"> Jogador 2: </label>
+		<input type="text" id="jogador2"/>
+		<input type="button" value="Iniciar" onclick="javascript: initGame();"/>
+	</fieldset>
+
+    <h3 id="jogadorAtual"> </h3>
+    <br>
+    <br>
+    <div class="board" id="board">
+        <div class="celula" onclick="jogar(0)" id="celula0"></div>
+        <div class="celula" onclick="jogar(1)" id="celula1"></div>
+        <div class="celula" onclick="jogar(2)" id="celula2"></div>
+        <div class="celula" onclick="jogar(3)" id="celula3"></div>
+        <div class="celula" onclick="jogar(4)" id="celula4"></div>
+        <div class="celula" onclick="jogar(5)" id="celula5"></div>
+        <div class="celula" onclick="jogar(6)" id="celula6"></div>
+        <div class="celula" onclick="jogar(7)" id="celula7"></div>
+        <div class="celula" onclick="jogar(8)" id="celula8"></div>
+    </div>
+
+    <div class="msg" id="msg"></div>
+    <input type="button" value="voltar" onclick="javascript: voltar();">
+
+    <script type="text/javascript" src="scripts.js"> </script>
+</html>
